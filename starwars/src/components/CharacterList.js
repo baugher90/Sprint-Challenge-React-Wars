@@ -3,7 +3,14 @@ import Character from './Character';
 
 const CharacterList = props => {
     return (
-        <Character />
+        <div>
+            {props.starwarsChars.map(character=>(
+                <Character 
+                character={character}
+                />
+            ))}
+        </div>
+        
     )
 }
 
