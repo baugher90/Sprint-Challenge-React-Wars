@@ -1,0 +1,15 @@
+.character-id {
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.447);
+    color: aliceblue;
+}
+
+.character-info {
+    padding: 10px;
+    margin: 10px;
+}
