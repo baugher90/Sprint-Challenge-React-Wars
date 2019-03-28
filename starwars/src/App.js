@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import CharacterList from './components/CharacterList';
+import SimpleStorage from "react-simple-storage";
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
+ 
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
@@ -28,11 +31,18 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
+  
   render() {
     return (
       <div className="App">
+        <SimpleStorage parent={this} />
         <h1 className="Header">React Wars</h1>
+        <div className="list">
+          <CharacterList 
+          starwarsChars={this.state.starwarsChars}
+          />
+        </div>
+        
       </div>
     );
   }

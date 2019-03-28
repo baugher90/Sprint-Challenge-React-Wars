@@ -1,0 +1,16 @@
+.character-id {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url('https://data1.origin.com/content/dam/originx/web/app/games/star-wars/star-wars-battlefront-2/last-jedi-content-update/star-wars-battlefront2_pdp_prefeature_1920x800_en_WW_Phasma.jpg');
+    background-size: cover;
+    color: aliceblue;
+}
+
+.character-info {
+    padding: 10px;
+    margin: 10px;
+}
